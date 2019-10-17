@@ -147,7 +147,7 @@
           this.tick = this.tick.bind(this);
         }
         componentDidMount() {
-          this.intervalID = setInterval(this.tick, 1000);
+          this.intervalID = setInterval(this.tick, 20);
         }
         tick() {
           this.setState(state => ({ seconds: (state.seconds % 10) + 1 }))
